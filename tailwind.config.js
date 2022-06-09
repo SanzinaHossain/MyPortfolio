@@ -4,8 +4,8 @@ module.exports = {
       themes: [
         {
           toolstheme: {
-          primary:"#b9770e",
-          secondary:"#f4d03f",
+          primary:"#404040",
+          secondary:"#262626",
          
           },
         },

@@ -6,11 +6,14 @@ import Projects from './DashBoard/Pages/Projects';
 import Blog from './DashBoard/Pages/Blog';
 import Contact from './DashBoard/Pages/Contact';
 import DashBoard from './DashBoard/DashBoard';
+import Navbar from './DashBoard/Pages/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
+      <Navbar></Navbar>
       <Routes>
+       <Route path="navbar" element={<Navbar></Navbar>}></Route>
       <Route path="/" element={
             <DashBoard/>
         }>
