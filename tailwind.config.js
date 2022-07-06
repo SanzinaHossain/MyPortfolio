@@ -6,7 +6,7 @@ module.exports = {
           toolstheme: {
           primary:"#404040",
           secondary:"#262626",
-         
+          neutral:"#ed8936"
           },
         },
       ],

@@ -7,7 +7,7 @@ import Blog from './DashBoard/Pages/Blog';
 import Contact from './DashBoard/Pages/Contact';
 import DashBoard from './DashBoard/DashBoard';
 import Navbar from './DashBoard/Pages/Navbar';
-
+import Skills from './DashBoard/Pages/Skills';
 function App() {
   return (
     <div className="">
@@ -20,6 +20,7 @@ function App() {
            <Route index element={<Home></Home>}></Route>
            <Route path="projects" element={<Projects></Projects>}></Route>
            <Route path="about" element={<Blog></Blog>}></Route>
+           <Route path="skills" element={<Skills></Skills>}></Route>
            <Route path="contact" element={<Contact></Contact>}></Route>
         </Route>
       </Routes>
