@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion ,useSpring} from 'framer-motion'
 import { BiMailSend} from "react-icons/bi";
 import {MdOutlineMarkEmailUnread,MdLocationOn } from "react-icons/md";
 import {BsFillTelephoneFill } from "react-icons/bs";
@@ -24,16 +25,31 @@ const Contact = () => {
   }
   return (
     <div class="p-5">
-       <h1 className='text-4xl text-neutral text-center'>
-    <span class="text-white">Contact</span> With Me</h1>
+       <motion.h1 className='text-4xl text-neutral text-center'
+        initial={{y:-100}}
+        animate={{color:'orange',y:5}}
+        transition={{ duration:1.5 }}>
+    <span class="text-white">Contact</span> With Me</motion.h1>
     <div class="divider"></div>
     <div class="hero bg-base-200 mt-3">
   <div class="hero-content flex-col lg:flex-row">
     <div class="text-center lg:text-left">
       <h1 class="text-4xl font-bold text-orange-500 mx-2">Contact Info</h1>
-      <h3 class="mt-4 flex justify-items-center items-center text-2xl mb-2"><MdOutlineMarkEmailUnread class="text-2xl mx-2"></MdOutlineMarkEmailUnread> <span class="mb-2">sanzina67shorna@gmail.com</span></h3>
-      <h3 class="mt-4 flex justify-items-center items-center text-2xl mb-2"><BsFillTelephoneFill class="text-2xl mx-2"></BsFillTelephoneFill> <span class="mb-2">01867623823</span></h3>
-      <h3 class="mt-4 flex justify-items-center items-center text-2xl mb-2"><MdLocationOn class="text-2xl mx-2"></MdLocationOn> <span class="mb-2">Pahartoli, Chittagong</span></h3>
+      <motion.h3 class="mt-4 flex justify-items-center items-center text-2xl mb-2"
+      whileHover={{scale:1.1,originX:0,color:'orange'}}
+      transition={{type:'spring',stiffness:300}}>
+      <MdOutlineMarkEmailUnread class="text-2xl mx-2"
+      ></MdOutlineMarkEmailUnread> 
+      <span class="mb-2"
+       >sanzina67shorna@gmail.com</span></motion.h3>
+      <motion.h3 class="mt-4 flex justify-items-center items-center text-2xl mb-2"
+     whileHover={{scale:1.1,originX:0,color:'orange'}}
+     transition={{type:'spring',stiffness:300}}
+      ><BsFillTelephoneFill class="text-2xl mx-2"></BsFillTelephoneFill> <span class="mb-2"
+      >01867623823</span></motion.h3>
+      <motion.h3 class="mt-4 flex justify-items-center items-center text-2xl mb-2"
+      whileHover={{scale:1.1,originX:0,color:'orange'}}
+      transition={{type:'spring',stiffness:300}}><MdLocationOn class="text-2xl mx-2"></MdLocationOn> <span class="mb-2">Pahartoli, Chittagong</span></motion.h3>
     </div>
     <form ref={form} onSubmit={sendEmail}>
     <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-orange-500 lg:mx-24 mx-2">
