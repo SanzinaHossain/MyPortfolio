@@ -8,6 +8,7 @@ import Contact from './DashBoard/Pages/Contact';
 import DashBoard from './DashBoard/DashBoard';
 import Navbar from './DashBoard/Pages/Navbar';
 import Skills from './DashBoard/Pages/Skills';
+import ProjectDetails from './DashBoard/Pages/ProjectDetails';
 function App() {
   return (
     <div className="">
@@ -22,6 +23,7 @@ function App() {
            <Route path="about" element={<Blog></Blog>}></Route>
            <Route path="skills" element={<Skills></Skills>}></Route>
            <Route path="contact" element={<Contact></Contact>}></Route>
+           <Route path="projectDetails" element={<ProjectDetails></ProjectDetails>}></Route>
         </Route>
       </Routes>
     </div>

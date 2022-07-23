@@ -19,10 +19,9 @@ const TEXTS = [
 ];
   return (
     <div class="d-flex p-12 pt-44">
-      <motion.h1 
-      whileHover={{color:'red'}}
+      <h1 
       class="text-3xl"
-      >Hello I'M</motion.h1>
+      >Hello I'M</h1>
       <h1 class="text-6xl text-orange-500 pt-2">Sanzina Hossain</h1>
       <p class="text-4xl text-white pt-4">I am a <span class="text-orange-500"><TextTransition
         text={ TEXTS[index % TEXTS.length] }
